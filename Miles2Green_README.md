@@ -61,10 +61,3 @@ Together, these datasets provide both **operational** (trip-based) and **technic
 ## ⚙️ Next Steps
 - Perform **exploratory data analysis (EDA)** to identify trends and patterns.
 - Develop **predictive models** to estimate energy efficiency and environmental impact.
-
----
-
-## 👩‍💻 Contributors
-**Team Miles2Green**  
-Driven by sustainability, powered by data.
-
