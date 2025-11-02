@@ -1,11 +1,19 @@
 # 🌱 Miles2Green: Smart Insights for Sustainable Mobility
 
 ## 📘 Project Overview
-**Miles2Green** is an initiative aimed at promoting *eco-friendly driving habits and energy-efficient vehicle usage* through data-driven insights. The project leverages electric vehicle (EV) trip data to analyze patterns in energy consumption, driving behavior, and trip characteristics — ultimately helping to build smarter and greener transportation systems.
+**Miles2Green** is an AI-driven system designed to promote sustainable electric vehicle (EV) driving.
+It analyzes driving patterns to provide personalized eco-driving insights and converts the driver’s journey data into an AI-generated sustainability story, visualizing how much carbon emission was saved compared to traditional fuel vehicles.
 
-The project aligns with green skills development by combining **data analytics** and **machine learning** to understand how factors such as trip distance, time of day, and driving patterns influence energy efficiency.
-
+This project integrates machine learning for driving analytics and generative AI for storytelling, motivating users to drive efficiently and contribute to a greener environment.
 ---
+## ⚙️ Working & Functionalities
+1. Eco-Driving Analyzer:
+Collects or simulates driving data (speed, distance, acceleration, braking frequency, energy use, etc.). Processes data to calculate an Eco-Score based on efficiency metrics. Identifies driving behavior (smooth, aggressive, idle-heavy).
+Generates personalized feedback such as:
+“Reducing harsh braking by 10% could extend your range by 15 km.”
+
+2. Carbon Footprint Story Generator:
+Calculates total CO₂ saved by comparing EV usage to an equivalent petrol/diesel vehicle. Converts raw statistics into a narrative summary using a generative AI model (e.g., GPT-based): “This week, your green driving prevented 8 kg of CO₂ emissions — enough to power a home fan for 30 hours!”
 
 ## 🗓️ Week 1: Data Collection and Preprocessing
 
