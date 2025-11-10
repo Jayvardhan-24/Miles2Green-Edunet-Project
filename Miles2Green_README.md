@@ -69,3 +69,135 @@ Together, these datasets provide both **operational** (trip-based) and **technic
 ## ⚙️ Next Steps
 - Perform **exploratory data analysis (EDA)** to identify trends and patterns.
 - Develop **predictive models** to estimate energy efficiency and environmental impact.
+
+# Week 2 - Machine Learning Model Development
+
+This week focused on building a predictive machine learning model for the Miles2Green project. The goal was to develop a simple yet effective model capable of predicting electric vehicle (EV) trip energy consumption. This prediction will support personalized eco-driving insights and sustainability storytelling.
+
+## Objectives Completed
+
+* Understand the structure and purpose of both datasets
+* Perform essential preprocessing and data cleaning
+* Visualize key patterns to validate data quality
+* Build and evaluate baseline predictive ML models
+* Generate insights to validate model performance
+
+---
+
+## Datasets Used
+
+* **EV_Energy_Consumption_Dataset.csv** – Time-series EV telemetry data
+* **Electric Vehicle Trip Energy Consumption Data.csv** – Trip-level summary data
+
+The predictive model was built primarily using the trip-level dataset.
+
+---
+
+## Preprocessing & Data Cleaning
+
+The following steps were performed to clean and prepare the data:
+
+### Basic Cleaning
+
+* Removed duplicate rows
+* Handled missing values:
+
+  * Numeric values → filled with median
+  * Categorical values → filled with mode
+* Corrected data types (e.g., converting timestamps)
+
+### Outlier Removal
+
+* Removed extreme outliers using Interquartile Range (IQR) method for:
+
+  * Trip Distance
+  * Trip Energy Consumption
+  * Trip Time Length
+
+### Encoding & Scaling
+
+* Applied Label Encoding for categorical columns (e.g., Day of Week)
+* Scaled numerical features using StandardScaler
+
+---
+
+## Visualization & Data Understanding
+
+To extract insights and validate the data, the following visualizations were generated:
+
+* **Histogram** of the target variable (Trip Energy Consumption)
+* **Correlation heatmap** for feature relationships
+* **Scatter plot** of Trip Distance vs Energy Consumption
+* **Boxplot** of Trip Distance to confirm outlier removal
+
+These plots helped confirm data consistency and identify meaningful feature relationships.
+
+---
+
+## Model Development
+
+Two regression models were built and compared:
+
+### 1. Linear Regression
+
+* Served as a baseline model
+* Provided quick interpretability
+
+### 2. Random Forest Regressor
+
+* Captured nonlinear relationships
+* Typically more robust
+
+Both models were trained on an 80/20 train-test split.
+
+---
+
+## 📈 Model Evaluation
+
+Evaluation metrics used:
+
+* **MAE (Mean Absolute Error)**
+* **MSE (Mean Squared Error)**
+* **R² Score**
+
+### Final Results
+
+**Linear Regression:**
+
+* MAE: 0.2862
+* MSE: 0.1595
+* R² Score: 0.8434
+
+**Random Forest Regressor:**
+
+* MAE: 0.2439
+* MSE: 0.1189
+* R² Score: 0.8832
+
+➡️ Random Forest demonstrated the best performance and was selected as the final model.
+
+---
+
+## Insights
+
+* Strong relationship observed between **Trip Distance** and **Energy Consumption**
+* Model successfully captures patterns and trends in the dataset
+* R² score above 0.88 indicates high reliability for prediction
+
+---
+
+## Week 2 Summary
+
+This week successfully completed all essential steps for building the predictive ML model:
+
+* Cleaned and prepared the dataset
+* Performed exploratory data analysis
+* Built baseline and advanced regression models
+* Evaluated model performance with industry-standard metrics
+* Selected the best-performing model (Random Forest)
+
+This lays the foundation for Week 3, where insights and model predictions will be used to generate AI-driven sustainability stories.
+
+---
+
+Next Step: **Story generation & integrating predictions into Miles2Green narrative engine.**
